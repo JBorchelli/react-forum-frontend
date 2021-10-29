@@ -5,7 +5,7 @@ RUN curl  -sL https://rpm.nodesource.com/setup_14.x | bash - \
         vim \
         nano \
         nodejs -y
-COPY tavern_frontend/ ./tavern_frontend
-WORKDIR /tavern_frontend
+COPY react_forum_frontend/ ./react_forum_frontend
+WORKDIR /react_forum_frontend
 RUN CHOKIDAR_USEPOLLING=true && npm install -g nodemon && npm install
        

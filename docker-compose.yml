@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile.web
     volumes:
-      - ./tavern_frontend/src:/tavern_frontend/src
+      - ./react_forum_frontend/src:/react_forum_frontend/src
     ports:
       - "3000:3000"
     environment:

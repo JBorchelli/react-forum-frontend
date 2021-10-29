@@ -1,4 +1,4 @@
-FRONTEND_CONTAINER=tavern_frontend_frontend_1
+FRONTEND_CONTAINER=react_forum_frontend_frontend_1
 PACKAGE=
 
 docker-build:
@@ -40,11 +40,11 @@ web-bash:
 install:
 	(	\
 		docker exec ${FRONTEND_CONTAINER} bash -c "npm install ${PACKAGE} && cp package.json ./src/package_bound.json"; \
-		cp -u ./tavern_frontend/src/package_bound.json ./tavern_frontend/package.json; \
+		cp -u ./react_forum_frontend/src/package_bound.json ./react_forum_frontend/package.json; \
 	)
 
 uninstall:
 	(	\
 		docker exec ${FRONTEND_CONTAINER} bash -c "npm uninstall ${PACKAGE} && cp package.json ./src/package_bound.json"; \
-		cp -u ./tavern_frontend/src/package_bound.json ./tavern_frontend/package.json; \
+		cp -u ./react_forum_frontend/src/package_bound.json ./react_forum_frontend/package.json; \
 	)
