@@ -1,0 +1,51 @@
+@use '../../palette.scss' as palette;
+
+.toolbar-dark {
+  //z-index: 2000 !important;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to top, 
+      #206C97, 
+      #0d2b3d
+    ) 1;
+    border-image-width: 0 0 2px 0;
+}
+
+.toolbar-light {
+  //background-color: chartreuse;
+  //border-width: 0 0 2px 0;
+  //border-style: solid;
+  //border-color: #000000bb
+}
+
+.testForum-dark {
+  margin-right: 1vw;
+  color: white;
+  background-image: linear-gradient(
+    to right, 
+    rgb(185, 43, 86), 
+    rgb(7, 185, 147)
+  );
+}
+
+.testLich-dark {
+  color: white;
+  background-image: linear-gradient(
+    to left, 
+    rgb(185, 43, 86), 
+    rgb(7, 185, 147)
+  );
+}
+
+.testForum-light {
+  margin-right: 1vw;
+  color: white;
+  background-color: #B34343;
+}
+
+.testLich-light {
+  color: white;
+  background-color: #B34343;
+}

@@ -1,0 +1,1 @@
+export const RECENT_TIME_LENGTH = 2; //4 days

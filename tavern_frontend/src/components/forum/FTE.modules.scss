@@ -1,0 +1,21 @@
+.card {
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    width: 50%;
+    height: 50%;
+    background: grey;
+    border-radius: 5px;
+    background-image: url(http://cdn.funnyisms.com/e72a1833-4360-43c3-9c8c-01e779aaa8c5.jpg);
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    border: 15px solid white;
+    z-index: 1;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }

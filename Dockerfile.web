@@ -1,0 +1,11 @@
+FROM centos:8.3.2011
+RUN curl  -sL https://rpm.nodesource.com/setup_14.x | bash - \    
+    && dnf install make \
+        gcc-c++ \
+        vim \
+        nano \
+        nodejs -y
+COPY tavern_frontend/ ./tavern_frontend
+WORKDIR /tavern_frontend
+RUN CHOKIDAR_USEPOLLING=true && npm install -g nodemon && npm install
+       

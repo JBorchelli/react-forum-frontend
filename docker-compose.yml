@@ -1,0 +1,20 @@
+version: "3.7"
+   
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    volumes:
+      - ./tavern_frontend/src:/tavern_frontend/src
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: dev
+      CHOKIDAR_USEPOLLING: 'true'
+    networks:
+      - frontend
+    command: npm start
+
+networks:
+  frontend:

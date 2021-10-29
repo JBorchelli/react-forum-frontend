@@ -1,0 +1,30 @@
+@use './palette.scss' as palette;
+
+.background-dark {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+
+  height: 100vh;
+  width: 100vw;
+
+  margin: 0;
+  background-color: palette.$dark-background-main;
+  background-image: url("tavern2.jpg");
+  z-index: 0;
+
+}
+
+.background-light {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+
+  height: 100vh;
+  width: 100vw;
+
+  margin: 0;
+  background-color: #B3BBBD; //Linen
+  background-image: url("./fake_api/waterfall1.jpg");
+  z-index: 0;
+}
